@@ -103,6 +103,21 @@ section {
     flex-direction: column;
 }
 
+section.xbox {
+    position: sticky;
+    top: 5.1rem;
+}
+
+section.ps {
+    position: sticky;
+    top: 8.75rem;
+}
+
+section.nintendo {
+    position: sticky;
+    top: 12.45rem;
+}
+
 .subheading {
     width: 100%;
     border-radius: 10px;
