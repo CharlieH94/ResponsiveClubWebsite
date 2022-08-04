@@ -29,10 +29,13 @@ header {
     z-index: 5;
 }
 
-header h1 {
+header h1 a {
+    display: flex;
+    
     font-family: 'Press Start 2P', cursive;
     padding: 1rem;
     color: white;
+    text-decoration: none;
 }
 
 /* Nav */
