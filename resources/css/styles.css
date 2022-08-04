@@ -12,7 +12,9 @@ html {
 }
 
 body {
+    height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-flow: column wrap;
 }
 
 /* Header */ 
@@ -103,8 +105,10 @@ section {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-flow: column wrap;
 }
+
+/* STICKY HEADINGS WAS CAUSING TOO MANY PROBLEMS
 
 section.xbox {
     position: sticky;
@@ -119,7 +123,7 @@ section.ps {
 section.nintendo {
     position: sticky;
     top: 12.45rem;
-}
+} */
 
 .subheading {
     width: 100%;
@@ -151,7 +155,7 @@ section.nintendo {
     display: flex;
     justify-content: space-between;
     padding: 1em 0 0 0;
-
+    flex-flow: row wrap;
 }
 
 figure.xbox {
@@ -189,6 +193,7 @@ figure img {
     height: 12rem;
     object-fit: cover;
     overflow: hidden;
+    flex-shrink:1;
 }
 
 figcaption {
@@ -223,9 +228,24 @@ h5 .right {
 
 /* Media Queries */
 
+/* Smaller Laptop or Landscape Tablet */
+
+@media only screen and (max-width: 1024px) {
+
+    figure.xbox, figure.ps, figure.nintendo {
+        margin-bottom: 1rem;
+        width: 48%;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+}
+
+
 /* Tablet */
 
-@media only screen and (max-width: 796px) {
+@media only screen and (max-width: 814px) {
     header h1 a {
         font-size: 1rem; 
     }
@@ -234,7 +254,7 @@ h5 .right {
     }
 }
 
-@media only screen and (max-width: 624px) {
+@media only screen and (max-width: 637px) {
     nav li {
         padding: 1rem 1rem;
     }
@@ -246,7 +266,7 @@ h5 .right {
 
 /* Phone */
 
-@media only screen and (max-width: 524px) {
+@media only screen and (max-width: 541px) {
     nav li {
         font-size: 0.75rem;
     }
@@ -256,6 +276,15 @@ h5 .right {
     nav li {
         padding: 0.5rem;
     }
+    figure.xbox, figure.ps, figure.nintendo {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+    }
+}
 
 @media only screen and (max-width: 422px) {
     header h1 a {
@@ -269,5 +298,4 @@ h5 .right {
     .banner h1 {
         font-size: 2rem;
     }
-}
 }
