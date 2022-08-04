@@ -1,0 +1,218 @@
+/* Universal Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header */ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: lightgrey 2px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    padding: 1rem;
+    color: white;
+}
+
+/* Nav */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding: 1rem 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.navheading.xbox:hover {
+    color: limegreen;
+}
+
+.navheading.ps:hover {
+    color: blue;
+}
+
+.navheading.nintendo:hover {
+    color: red;
+}
+
+nav a:active {
+    background-color: lightgrey;
+}
+
+/* Main / Banner */
+
+.banner{
+    margin-top: 4.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-color: yellow;
+
+}
+
+.banner h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* .banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.banner::before {
+    content: "";
+    background-image: url('resources/images/banner.jpg');
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.45;
+    
+} */
+
+/* Sections */
+
+section {
+    background-color: black;
+    margin: 2.5rem 2.5rem 4rem 2.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subheading {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    padding: 0.5rem;
+
+}
+
+.subheading.xbox {
+    background-color: limegreen;
+}
+
+.subheading.ps {
+    background-color: blue;
+    border: blue;
+}
+
+.subheading.nintendo {
+    background-color: red;
+    border: red;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 0 0;
+
+}
+
+figure.xbox {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure.ps {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure.nintendo {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+figcaption {
+    padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+    border-top: lightgrey 2px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h5 {
+    color: white;
+    font-weight: normal;
+}
+
+h5 .left {
+    text-align: left;
+}
+
+h5 .right {
+    text-align: right;
+}
