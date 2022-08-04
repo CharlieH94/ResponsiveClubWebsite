@@ -84,6 +84,8 @@ nav a:active {
 .banner h1 {
     color: black;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 /* .banner {
