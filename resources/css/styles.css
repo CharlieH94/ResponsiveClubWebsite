@@ -227,11 +227,6 @@ h5 .right {
 
 @media only screen and (max-width: 796px) {
     header h1 a {
-        display: flex;
-        font-family: 'Press Start 2P', cursive;
-        padding: 1rem;
-        color: white;
-        text-decoration: none;
         font-size: 1rem; 
     }
 }
@@ -254,4 +249,13 @@ h5 .right {
     nav li {
         padding: 0.5rem;
     }
+
+@media only screen and (max-width: 422px) {
+    header h1 a {
+        font-size: 0.8rem; 
+    }
+    nav li {
+        font-size: 0.65rem;
+    }
+}
 }
