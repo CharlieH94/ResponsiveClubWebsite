@@ -229,11 +229,18 @@ h5 .right {
     header h1 a {
         font-size: 1rem; 
     }
+    .banner h1 {
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 624px) {
     nav li {
         padding: 1rem 1rem;
+    }
+
+    .banner h1 {
+        padding: 2rem;
     }
 }
 
@@ -254,8 +261,13 @@ h5 .right {
     header h1 a {
         font-size: 0.8rem; 
     }
+   
     nav li {
         font-size: 0.65rem;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
     }
 }
 }
